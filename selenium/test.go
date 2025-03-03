@@ -11,7 +11,7 @@ import (
 func Test(ctx context.Context, cmd *cli.Command) error {
 	var err error
 	var service *selenium.Service
-	service, err = selenium.NewChromeDriverService("selenium/chromedriver.exe",
+	service, err = selenium.NewChromeDriverService("./chromedriver.exe",
 		4444)
 	if err != nil {
 		utils.Error("Error starting service:", err)

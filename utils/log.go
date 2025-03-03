@@ -7,31 +7,33 @@ import (
 )
 
 var (
-	infoLogger  = log.New(os.Stdout, color.New(color.FgBlue, color.Bold).Sprintf("[")+color.New(color.FgBlue).Sprintf("INFO")+color.New(color.FgBlue, color.Bold).Sprintf("] "), log.LstdFlags)
-	warnLogger  = log.New(os.Stdout, color.New(color.FgYellow, color.Bold).Sprintf("[")+color.New(color.FgYellow).Sprintf("WARN")+color.New(color.FgYellow, color.Bold).Sprintf("] "), log.LstdFlags)
-	errorLogger = log.New(os.Stderr, color.New(color.FgRed, color.Bold).Sprintf("[")+color.New(color.FgRed).Sprintf("ERROR")+color.New(color.FgRed, color.Bold).Sprintf("] "), log.LstdFlags)
+	boldWhite = color.New(color.FgWhite, color.Bold).SprintFunc()
+
+	infoLogger  = log.New(os.Stdout, color.New(color.FgBlue, color.Bold).Sprint("[INFO] "), log.LstdFlags)
+	warnLogger  = log.New(os.Stdout, color.New(color.FgYellow, color.Bold).Sprint("[WARN] "), log.LstdFlags)
+	errorLogger = log.New(os.Stderr, color.New(color.FgRed, color.Bold).Sprint("[ERROR] "), log.LstdFlags)
 )
 
 func Info(message string, err error) {
 	if err != nil {
-		infoLogger.Printf("%s - Error: %v\n", message, err)
+		infoLogger.Println(boldWhite(message + " - Error: " + err.Error()))
 	} else {
-		infoLogger.Println(message)
+		infoLogger.Println(boldWhite(message))
 	}
 }
 
 func Warn(message string, err error) {
 	if err != nil {
-		warnLogger.Printf("%s - Error: %v\n", message, err)
+		warnLogger.Println(boldWhite(message + " - Error: " + err.Error()))
 	} else {
-		warnLogger.Println(message)
+		warnLogger.Println(boldWhite(message))
 	}
 }
 
 func Error(message string, err error) {
 	if err != nil {
-		errorLogger.Printf("%s - Error: %v\n", message, err)
+		errorLogger.Println(boldWhite(message + " - Error: " + err.Error()))
 	} else {
-		errorLogger.Println(message)
+		errorLogger.Println(boldWhite(message))
 	}
 }
