@@ -59,6 +59,8 @@ We are working hard to bring all the features listed below in a future release.
 - **Can send embeds using 3rd Party APIs** 🖼️📡: Support for embeds.
 - **Supports multiple messages** ✉️✉️: Send multiple messages in one action.
 
+### ✅ Added Features
+- **✅ Test Feature**: Simple test feature for selenium chromedriver
 
 ## Installation ⚙️
 
