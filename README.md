@@ -1,4 +1,10 @@
-# DMDGO Rewrite 📦
+<p align="center">
+  <img src="https://i.imgur.com/eOu22G1.png">
+ </p>
+
+
+
+
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) ![Go version](https://img.shields.io/github/go-mod/go-version/svg-rs/DMDGO)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/svg-rs/DMDGO)
 
