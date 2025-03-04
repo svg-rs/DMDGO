@@ -9,7 +9,7 @@
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/svg-rs/DMDGO)
 
 
-**DMDGO** is a rewritten version of the original [DMDGO](https://github.com/V4NSH4J/discord-mass-DM-GO) project, restructured in ChromeDP to allow for advanced bypasses and improved automation.
+**DMDGO-Rewrite** is a rewritten version of the original [DMDGO](https://github.com/V4NSH4J/discord-mass-DM-GO) project, restructured in ChromeDP to allow for advanced bypasses and improved automation.
 
 ## All Features Coming Soon 🚀
 
