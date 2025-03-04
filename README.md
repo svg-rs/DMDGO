@@ -61,6 +61,7 @@ We are working hard to bring all the features listed below in a future release.
 
 ### ✅ Added Features
 - **✅ Test Feature**: Simple test feature for selenium chromedriver
+- **✅ Token Login**: Function to login from user and pass and retrive token
 
 ## Installation ⚙️
 
